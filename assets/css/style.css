@@ -29,6 +29,8 @@ img{
 }
 
 aside{
+    display: flex;
+    flex-direction: column;
     height: 90vh;
     background-color: black;
     width: calc(100vh / 4);
@@ -135,6 +137,33 @@ aside{
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+}
+
+/* Aside Footer*/
+
+.aside-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding-top: 15rem;
+}
+
+.aside-footer > .menu-item figure{
+    width: 10%;
+}
+
+.aside-footer > .menu-item:last-child figure{
+    width: 15%;
+    aspect-ratio: 1;
+    background-color: var(--unselected-main-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.aside-footer > .menu-item:last-child figure img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
 }
 
 
@@ -355,6 +384,33 @@ aside{
     .menu{
         padding-top: 1rem;
     }
+
+    /* Aside Footer*/
+
+    .aside-footer hr{
+        display: none;
+    }
+
+    .aside-footer{
+        padding-top: 40.5rem;
+        gap: 1rem;
+    }
+    
+    .aside-footer > .menu-item:first-child figure{
+        width: 40%;
+    }
+    
+    .aside-footer > .menu-item:last-child figure{
+        width: 100%;
+        aspect-ratio: 1;
+        background-color: var(--unselected-main-color);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+
+
+    
 }
 
 
