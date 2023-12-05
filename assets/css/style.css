@@ -12,6 +12,7 @@ html{
 
 img{
     max-width: 100%;
+    display: block;
 }
 
 :root{
@@ -70,8 +71,11 @@ aside{
     display: none;
 }
 
+
+/* Aside menu*/
+
 .menu{
-    padding-top: 2rem;
+    padding-top: 2rem; 
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -97,6 +101,41 @@ aside{
 }
 
 
+/* Aside Playlist*/
+
+.add-playlist a figure{
+    width: 15%;
+}
+
+.add-playlist a figure img{
+    width: 100%;
+}
+
+.playlist h5{
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.add-playlist a{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--unselected-main-color);
+}
+
+.existing-playlist{
+    font-size: 0.87rem;
+    padding-top: 1rem;
+    font-weight: 700;
+    color: var(--unselected-main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
 
 
 
