@@ -71,13 +71,165 @@ aside{
 
 .upgrade-button{
     max-width: 60%;
+    align-self: center;
 }
+
+/* Spotify body*/
 
 .spotify-body{
     background-color: #141922;
     height: 90vh;
     width: 100%;
+    padding-top: calc((100vh / 10) + 2rem);
 }
+
+.music-generes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.music-generes ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.music-generes ul li a{
+    text-decoration: none;
+    color: var(--unselected-main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: clamp(1rem,0.8vw,1.2rem);
+}
+
+/* Spotify container*/
+
+.spotify-body-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 2rem;
+    background-color: #141922;
+}
+
+.spotify-section h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.spotify-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.musics-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.music-card{
+    --gap: 2rem;
+    --columns: 6;
+    flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.music-card .subtitle{
+    font-weight: 700;
+    color: var(--unselected-main-color);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.music-card .title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.music-cover > figure{
+    width: 100%;
+    object-fit: cover;
+    background-color: black;
+}
+
+.music-cover > figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.play-hover figure{
+    width: 30%;
+    object-fit: cover;
+}
+
+.play-hover figure img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.music-cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.play-hover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.music-cover:hover .play-hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Spotify action-bar*/
 
 .spotify-action-bar{
     width: 100%;
@@ -85,13 +237,17 @@ aside{
     background-color: #282828;
 }
 
+/* Spotify body-r*/
+
 .body-r{
     display: flex;
     flex-direction: column;
-    min-width: calc(100% - (100vh / 4));
+    width: calc(100% - (100vh / 4));
     overflow-y: auto;
 }
 
+
+/* Aside*/
 .main-logo{
     width: 90%;
 }
@@ -389,7 +545,7 @@ aside{
 
 /******************************************************************************************************************************************************************                                      XSmall *****************************************************************************************************************************************************************/
 
-@media screen and (max-width: 568px){
+@media screen and (max-width: 603px){
     aside{
         width: calc(100vh / 16);
         display: flex;
