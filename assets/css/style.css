@@ -29,6 +29,7 @@ img{
 }
 
 aside{
+    border: 1px solid pink;
     display: flex;
     flex-direction: column;
     height: 90vh;
@@ -36,14 +37,40 @@ aside{
     width: calc(100vh / 4);
     padding-inline: 1rem;
     padding-top: 1rem;
+    position: relative;
+}
+
+
+/* Top banner*/
+
+.top-banner a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: clamp(0.6rem,1.5vw,1.2rem);
+    width: 100%;
+    display: inline-block;
 }
 
 .top-banner{
-    width: 100%;
+    width: calc(100% - (100vh / 4));
     height: calc(100vh / 10);
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 999;
     position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.3rem;
+}
+
+.upgrade-button{
+    max-width: 60%;
 }
 
 .spotify-body{
@@ -145,7 +172,13 @@ aside{
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    padding-top: 15rem;
+    justify-self: flex-end;
+    position: absolute;
+    border: 1px solid red;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
 }
 
 .aside-footer > .menu-item figure{
@@ -165,6 +198,10 @@ aside{
     aspect-ratio: 1;
     object-fit: contain;
 }
+
+
+
+
 
 
 
@@ -352,7 +389,7 @@ aside{
 
 /******************************************************************************************************************************************************************                                      XSmall *****************************************************************************************************************************************************************/
 
-@media screen and (max-width: 552px){
+@media screen and (max-width: 568px){
     aside{
         width: calc(100vh / 16);
         display: flex;
@@ -361,6 +398,10 @@ aside{
 
     .body-r{
         min-width: calc(100% - (100vh / 16));
+    }
+
+    .top-banner{
+        width: calc(100% - (100vh / 16));
     }
 
     .xs-not-visible{
@@ -392,7 +433,6 @@ aside{
     }
 
     .aside-footer{
-        padding-top: 40.5rem;
         gap: 1rem;
     }
     
