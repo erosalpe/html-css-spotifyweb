@@ -370,6 +370,124 @@ aside{
     object-fit: contain;
 }
 
+/* Spotify action bar*/
+
+.spotify-action-bar{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* action bar l*/
+
+.action-bar-l{
+    width: calc(100vh / 4);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.current-song figure{
+    width: 30%;
+}
+
+.current-song{
+    width: 60%;
+}
+
+.current-song-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.current-song-info span:first-child{
+    color: white;
+    font-weight: 700;
+}
+
+.current-song-info span:last-child{
+    color: var(--unselected-main-color);
+    font-weight: 700;
+}
+
+.action-buttons a figure:first-child,
+.action-buttons a figure:last-child{
+    width: 150%;
+}
+
+.action-buttons a figure:first-child img,
+.action-buttons a figure:last-child img{
+    width: 100%;
+}
+
+.action-buttons a{
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.action-buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+/* action bar center*/
+
+.action-bar-center{
+    width: calc(100% - ((100vh / 4) * 2));
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.center-icon figure img{
+    width: 100%;
+}
+
+.center-icon{
+    scale: 1.5;
+}
+
+.center-icon figure{
+    width: 100%;
+}
+
+.bigger{
+    scale: 2;
+}
+
+.row-top{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    align-self: center;
+}
+
+.row-bottom{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.row-bottom span{
+    color: var(--unselected-main-color);
+    font-weight: 700;
+    font-size: 0.6rem;
+}
+
+.progression-bar-back{
+    background-color: var(--unselected-main-color);
+    width: 100%;
+    height: 5px;
+    border-radius: 1rem;
+}
+
+.progression-bar{
+    background-color: white;
+    width: 20%;
+    height: 5px;
+    border-radius: 1rem;
+}
+
 
 
 
@@ -636,6 +754,50 @@ aside{
         --columns: 2;
         flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
     }
+
+    .action-bar-l{
+        width: calc((100vh / 16) * 3);
+        gap: 0.2;
+    }
+
+    .current-song{
+        gap: 1rem;
+    }
+
+    .current-song-info{
+        width: 40%;
+    }
+
+    .current-song-info span:last-child{
+        font-size: 0.7rem;
+    }
+
+    .current-song figure{
+        width: 35%;
+    }
+
+    .current-song figure img{
+        width: 100%;
+    }
+
+    .action-buttons{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .action-buttons a figure:first-child,
+    .action-buttons a figure:last-child{
+        width: 100%;
+    }
+
+    .action-buttons a figure:first-child img,
+    .action-buttons a figure:last-child img{
+        width: 100%;
+    }
+
+    /* .current-song{
+        width: 100%;
+    } */
 
 
 
