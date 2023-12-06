@@ -126,7 +126,12 @@ aside{
 .spotify-section{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.spotify-section span{
+    color: var(--unselected-main-color);
+    font-weight: 700;
 }
 
 .musics-container{
@@ -144,6 +149,7 @@ aside{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    min-width: 15%;
 }
 
 .music-card .subtitle{
@@ -179,6 +185,15 @@ aside{
 .play-hover figure img{
     width: 100%;
     object-fit: cover;
+}
+
+.popular .music-cover > figure,
+.popular .music-cover > figure img,
+.popular .play-hover figure,
+.popular .play-hover figure img,
+.popular .play-hover{
+    border-radius: 50%;
+    aspect-ratio: 1;
 }
 
 .music-cover{
@@ -469,6 +484,12 @@ aside{
 
 /******************************************************************************************************************************************************************                                      Medium *****************************************************************************************************************************************************************/
 @media screen and (max-width: 878px){
+
+    .music-card{
+        --gap: 2rem;
+        --columns: 4;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+    }
     
 }
 
@@ -505,6 +526,12 @@ aside{
 /******************************************************************************************************************************************************************                                      Small *****************************************************************************************************************************************************************/
 
 @media screen and (max-width: 639px){
+
+    .music-card{
+        --gap: 2rem;
+        --columns: 2;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
+    }
     
 }
 
@@ -602,6 +629,12 @@ aside{
         background-color: var(--unselected-main-color);
         border-radius: 50%;
         overflow: hidden;
+    }
+
+    .music-card{
+        --gap: 2rem;
+        --columns: 2;
+        flex-basis: calc((100% / var(--columns)) - var(--gap) + (var(--gap) / var(--columns)));
     }
 
 
