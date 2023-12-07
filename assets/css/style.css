@@ -302,7 +302,7 @@ aside{
     width: 100%;
 }
 
-.playlist h5{
+h5{
     color: white;
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
@@ -310,7 +310,7 @@ aside{
 }
 
 .playlist{
-    overflow: hidden;
+    overflow: auto;
     border: 1px solid red;
     width: 100%;
     height: 100%;
@@ -349,13 +349,10 @@ aside{
     gap: 0.7rem;
     background-color: black;
 
-    /* position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0; */
     border: 1px solid lime;
-
     padding: 1rem;
+    justify-content: flex-end;
+    justify-self: flex-end;
 }
 
 .aside-footer > .menu-item figure{
