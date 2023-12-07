@@ -516,6 +516,17 @@ aside{
     width: 140%;
 }
 
+a:hover,
+.menu-item-name span:hover{
+    color: white;
+}
+
+.menu-item-selected{
+    border-left: 3px solid #CBFF31; 
+    padding-left: 0.9rem;
+    margin-left: -1rem;
+}
+
 
 
 
