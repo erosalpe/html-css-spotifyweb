@@ -517,7 +517,8 @@ aside{
 }
 
 a:hover,
-.menu-item-name span:hover{
+.menu-item-name span:hover,
+.music-generes ul li a:hover{
     color: white;
 }
 
